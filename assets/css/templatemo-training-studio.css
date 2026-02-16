@@ -120,12 +120,12 @@ body {
 }
 
 ::selection {
-  background: #ed563b;
+  background: #7a004b;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #ed563b;
+  background: #7a004b;
   color: #fff;
 }
 
@@ -163,7 +163,7 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #ed563b;
+  color: #7a004b;
 }
 
 .section-heading img {
@@ -182,7 +182,7 @@ body {
   display: inline-block;
   font-size: 15px;
   padding: 12px 20px;
-  background-color: #ed563b;
+  background-color: #7a004b;
   color: #fff;
   text-align: center;
   font-weight: 400;
@@ -191,7 +191,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #f9735b;
+  background-color: #9a0060;
 }
 
 
@@ -225,11 +225,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #ed563b!important;
+  color: #7a004b!important;
 }
 
 .background-header .nav li a.active {
-  color: #ed563b!important;
+  color: #7a004b!important;
 }
 
 .header-area {
@@ -266,7 +266,7 @@ header
 
 .header-area .main-nav .logo em {
   font-style: normal;
-  color: #ed563b;
+  color: #7a004b;
   font-weight: 900;
 }
 
@@ -312,7 +312,7 @@ header
   display: inline-block;
   font-size: 13px;
   padding: 11px 17px;
-  background-color: #ed563b;
+  background-color: #7a004b;
   color: #fff;
   text-align: center;
   font-weight: 400;
@@ -324,19 +324,19 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a:hover {
-  background-color: #f9735b;
+  background-color: #9a0060;
   opacity: 1;
 }
 
-.header-area .main-nav .nav li:hover a,
+.header-area .main-nav .nav li:not(:last-child):hover a,
 .header-area .main-nav .nav li a.active {
-  color: #ed563b!important;
+  color: #7a004b!important;
   opacity: 1;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #ed563b!important;
+  color: #7a004b!important;
   opacity: 1;
 }
 
@@ -460,7 +460,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ed563b;
+  color: #7a004b;
 }
 
 @media (max-width: 1200px) {
@@ -479,7 +479,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #ed563b!important;
+    color: #7a004b!important;
     opacity: 1;
   }
   .header-area {
@@ -516,15 +516,15 @@ header
   }
   .header-area .main-nav .nav li:last-child {
     width: 100%;
-    background-color: #ed563b;
+    background-color: #7a004b;
     color: #fff;
   }
   .header-area .main-nav .nav li:last-child a {
-    background-color: #ed563b!important;
+    background-color: #7a004b!important;
   }
   .header-area .main-nav .nav li:last-child a:hover,
   .header-area .main-nav .nav li:last-child:hover a {
-    background-color: #ed563b!important;
+    background-color: #7a004b!important;
     color: #fff!important;
   }
   .header-area.header-sticky .nav {
@@ -550,7 +550,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #ed563b!important;
+    color: #7a004b!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -660,7 +660,7 @@ banner
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #ed563b;
+  color: #7a004b;
   font-weight: 900;
 }
 
@@ -681,9 +681,21 @@ features
   margin-bottom: 60px;
 }
 
+.feature-item .left-icon {
+  /* float: left; */
+  background-color: #7a004b;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
 .feature-item .left-icon img {
   /* float: left; */
-  margin-right: 30px;
+  width: 80%;
 }
 
 .feature-item .right-content {
@@ -705,7 +717,7 @@ features
   display: inline-block;
   font-size: 13px;
   text-transform: uppercase;
-  color: #ed563b;
+  color: #7a004b;
   font-weight: 500;
 }
 
@@ -724,6 +736,11 @@ subscribe
   text-align: center;
 }
 
+.cta-content {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .cta-content h2 {
   font-size: 36px;
   text-transform: uppercase;
@@ -734,13 +751,15 @@ subscribe
 
 .cta-content h2 em {
   font-style: normal;
-  color: #ed563b;
+  color: #7a004b;
 }
 
 .cta-content p {
   font-size: 16px;
   color: #fff;
-  margin: 15px 0px 25px 0px;
+  margin: 15px auto 25px auto;
+  display: list-item;
+  text-align: left;
 }
 
 
@@ -792,10 +811,10 @@ Our Classes
   font-size: 19px;
   letter-spacing: 0.5px;
   font-weight: 600;
-  background-color: #ed563b;
+  background-color: #7a004b;
 }
 #tabs .main-rounded-button a:hover {
-  background-color: #f9735b;
+  background-color: #9a0060;
 }
 #tabs ul li a img {
   max-width: 100%;
@@ -808,7 +827,7 @@ Our Classes
   border-bottom: none;
 }
 #tabs ul .ui-tabs-active a {
-  color: #ed563b;
+  color: #7a004b;
 }
 #tabs ul .ui-tabs-active span {
   color: #1e1e1e;
@@ -926,7 +945,7 @@ schedule
 }
 #schedule .filters ul li.active,
 #schedule .filters ul li:hover {
-  color: #ed563b;
+  color: #7a004b;
 }
 #schedule .filters-content {
   margin-top: 50px;
@@ -964,7 +983,7 @@ trainers
 #trainers .trainer-item span {
   font-size: 13px;
   font-weight: 500;
-  color: #ed563b;
+  color: #7a004b;
   display: inline-block;
   margin-top: 25px;
   margin-bottom: 10px;
@@ -997,7 +1016,7 @@ trainers
 }
 
 #trainers .trainer-item ul.social-icons li a:hover {
-  color: #ed563b;
+  color: #7a004b;
 }
 
 
@@ -1067,7 +1086,7 @@ contact
   display: inline-block;
   font-size: 13px;
   padding: 11px 17px;
-  background-color: #ed563b;
+  background-color: #7a004b;
   color: #fff;
   text-align: center;
   font-weight: 400;
@@ -1079,7 +1098,7 @@ contact
 }
 
 .contact-form button:hover {
-  background-color: #f9735b;
+  background-color: #9a0060;
 }
 
 
@@ -1102,11 +1121,11 @@ footer p {
 
 footer p a {
   cursor: pointer;
-  color: #ed563b;
+  color: #7a004b;
 }
 
 footer p a:hover {
-  color: #ed563b;
+  color: #7a004b;
 }
 
 
@@ -1209,6 +1228,18 @@ preloader
     margin-left: 16px;
     background: #fff;
     border-radius: 50%;
+}
+
+.social-wrapper img {
+  width: 32px;
+}
+
+.wavy-underline {
+  width: 100%;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
