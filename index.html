@@ -26,6 +26,9 @@ https://templatemo.com/tm-548-training-studio
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
 
+    <!-- splidejs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+
 </head>
 
 <body>
@@ -51,15 +54,16 @@ https://templatemo.com/tm-548-training-studio
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">Boxnfit<em> Training</em></a>
+                        <a href="index.html" class="logo">Box<span style="color: #FF1FA9">n</span>fit<em> Training</em></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Accueil</a></li>
-                            <li class="scroll-to-section"><a href="#features">Notre histoire</a></li>
+                            <!-- <li class="scroll-to-section"><a href="#features">Notre histoire</a></li> -->
                             <li class="scroll-to-section"><a href="#our-classes">Nos cours</a></li>
                             <li class="scroll-to-section"><a href="#schedule">Planning</a></li>
-                            <li class="scroll-to-section"><a href="#pricing">Tarifs</a></li>
+                            <li class="scroll-to-section"><a href="#pricing" data-toggle="modal"
+                                    data-target="#pricingModal">Tarifs</a></li>
                             <li class="main-button"><a href="#contact-us">Nous contacter</a></li>
                         </ul>
                         <a class='menu-trigger'>
@@ -73,16 +77,167 @@ https://templatemo.com/tm-548-training-studio
     </header>
     <!-- ***** Header Area End ***** -->
 
+    <!-- ***** Modal Area Start ***** -->
+    <div class="modal fade" id="pricingModal" tabindex="-1" role="dialog" aria-labelledby="pricingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content position-relative">
+                <div class="modal-body">
+                    <div id="carousel" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="pricing-card-item">
+                                        <div>
+                                            <h5 class="pricing-modal-label" id="pricingModalLabel">
+                                                B<span>O</span>XNFIT<br>
+                                                TRAINING
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>NOS OFFRES</h2>
+                                                <h6 class="price-year text-right">ANNÉE 2026</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <button class="next-btn">ABONNEMENTS →</button>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="pricing-card-item pass">
+                                        <div class="mb-4">
+                                            <h2>ABONNEMENTS</h2>
+                                            <h5>PASS COMPLET</h5>
+                                        </div>
+                                        <div class="subscription-box">
+                                            <div class="header">
+                                                <h4>45€</h4>
+                                                <div class="right">
+                                                    <h3>2X SEMAINE</h3>
+                                                    <h5>ESSENTIEL</h5>
+                                                </div>
+                                            </div>
+                                            <p>Deux séances par semaine donnant accès à tous nos cours collectifs.</p>
+                                        </div>
+                                        <div>
+                                            <div class="subscription-box">
+                                                <div class="header">
+                                                    <h4>55€</h4>
+                                                    <div class="right">
+                                                        <h3>ILLIMITÉ</h3>
+                                                        <h5>PREMIUM</h5>
+                                                    </div>
+                                                </div>
+                                                <p>Abonnements donnant accès à tous nos cours collectifs en ILLIMITÉ !
+                                                </p>
+                                            </div>
+                                            <button class="next-btn">ABONNEMENTS CARDIO BOXING CIRCUIT REMISE EN FORME /
+                                                BOXE & ACCÈS LIBRE →</button>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="pricing-card-item">
+                                        <div class="mb-4">
+                                            <h2>ABONNEMENTS</h2>
+                                            <h5>CARDIO BOXING / CIRCUIT TRAINING / CIRCUIT RENFO / BOXE</h5>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <div class="subscription-box">
+                                                    <div class="header">
+                                                        <h4>30€</h4>
+                                                        <div class="right">
+                                                            <h3>2X SEMAINE</h3>
+                                                            <h5>BASIC</h5>
+                                                        </div>
+                                                    </div>
+                                                    <p>Deux séances par semaine. Donnant accès à nos cours de Cardio
+                                                        Boxing / Circuit Training Circuit Renfo et Boxe.</p>
+                                                </div>
+                                                <div class="subscription-box">
+                                                    <div class="header">
+                                                        <h4>35€</h4>
+                                                        <div class="right">
+                                                            <h3>ILLIMITÉ</h3>
+                                                            <h5>ÉVOLUTION</h5>
+                                                        </div>
+                                                    </div>
+                                                    <p>Séances ILLIMITÉ. Donnant accès à nos cours de Cardio Boxing /
+                                                        Circuit Training Circuit Renfo et Boxe.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="next-btn">ABONNEMENTS SENIOR ET KIDS →</button>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="pricing-card-item">
+                                        <div>
+                                            <h2>ABONNEMENTS</h2>
+                                            <h5>KIDS & SENIOR</h5>
+                                        </div>
+                                        <div class="subscription-box">
+                                            <div class="header">
+                                                <h4>25€</h4>
+                                                <div class="right">
+                                                    <h3></h3>
+                                                    <h5>KIDS</h5>
+                                                </div>
+                                            </div>
+                                            <p>2 Séances par semaine. Donnant accès aux cours KIDS</p>
+                                        </div>
+                                        <div class="subscription-box">
+                                            <div class="header">
+                                                <h4>30€</h4>
+                                                <div class="right">
+                                                    <h3></h3>
+                                                    <h5>SENIOR</h5>
+                                                </div>
+                                            </div>
+                                            <p>2 Séances par semaine donnant accès au cours SÉNIOR</p>
+                                        </div>
+                                        <button class="next-btn">CARTES & SÉANCES →</button>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="pricing-card-item">
+                                        <div class="mb-4">
+                                            <h2 class="card-session">CARTES & SÉANCES</h2>
+                                            <h6 class="price-year text-center">BOXNFIT TRAINING</h6>
+                                        </div>
+                                        <div class=" justify-content-center align-items-center">
+                                            <div class="d-flex flex-column">
+                                                <h3 class="price">130€</h3>
+                                                <h3 class="text">10 SÉANCES</h3>
+                                            </div>
+                                            <div class="position-relative session-card-row">
+                                                <h3 class="price">15€</h3>
+                                                <h3 class="text">DROP IN</h3>
+                                            </div>
+                                        </div>
+                                        <button class="next-btn">INFORMATIONS →</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Modal Area End ***** -->
+
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
-        <video autoplay muted loop id="bg-video">
+        <img id="bg-video" src="./assets/images/domain/toto.jpg" alt="toto">
+        <!-- <video autoplay muted loop id="bg-video">
             <source src="assets/images/gym-video.mp4" type="video/mp4" />
-        </video>
+        </video> -->
 
         <div class="video-overlay header-text">
             <div class="caption">
                 <h6>Ta nouvelle salle de sport sur Saint Alban</h6>
-                <h2>Envie de progresser dans une ambiance conviviale et familiale ? Ta place est ici</h2>
+                <h2>On vient pour le Sport, on reste pour l’ambiance</h2>
                 <div class="main-button scroll-to-section">
                     <a href="https://app.peppy.cool/quicksell/cmk6xwhdv1gnale0tffxdtksr/book/trial/">Réserve ta séance
                         d’essai gratuite</a>
@@ -99,7 +254,20 @@ https://templatemo.com/tm-548-training-studio
                 <div class="col-lg-7">
                     <div class="section-heading">
                         <h2>Une communauté unie par la passion du sport</h2>
-                        <img src="assets/images/line-dec.png" alt="waves">
+                        <!-- <img src="assets/images/line-dec.png" alt="waves"> -->
+                        <div class="wavy-underline">
+                            <svg viewBox="0 0 200 40" width="140" height="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 10 Q10 2 20 10 T40 10 T60 10 T80 10 T100 10 T120 10 T140 10 T160 10 T180 10 T200 10"
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
+                                <path
+                                    d="M0 20 Q10 12 20 20 T40 20 T60 20 T80 20 T100 20 T120 20 T140 20 T160 20 T180 20 T200 20"
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
+                                <path
+                                    d="M0 30 Q10 22 20 30 T40 30 T60 30 T80 30 T100 30 T120 30 T140 30 T160 30 T180 30 T200 30"
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
+                            </svg>
+                        </div>
                         <p>Boxnfit Training, c’est bien plus qu’une simple salle de sport. C’est une véritable
                             communauté, liée par l’amour du sport et l’envie de se sentir mieux au quotidien. Ici,
                             chacun a sa place dans une ambiance chaleureuse, familiale et conviviale, où l’entraide, la
@@ -123,7 +291,7 @@ https://templatemo.com/tm-548-training-studio
                         </li>
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="assets/images/domain/person-running-solid-full.svg" alt="second one">
+                                <img src="assets/images/domain/la--chalkboard-teacher.svg" alt="second one">
                             </div>
                             <div class="right-content">
                                 <h4>Coaching adapté</h4>
@@ -187,8 +355,9 @@ https://templatemo.com/tm-548-training-studio
     <!-- ***** Features Item End ***** -->
 
     <!-- ***** Call to Action Start ***** -->
-    <section class="section" id="call-to-action">
+    <section class="section position-relative" id="call-to-action">
         <div class="container">
+            <div class="video-overlay"></div>
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
@@ -214,7 +383,20 @@ https://templatemo.com/tm-548-training-studio
                 <div class="col-lg-7">
                     <div class="section-heading">
                         <h2>Nos <em>cours</em></h2>
-                        <img src="assets/images/line-dec.png" alt="waves">
+                        <!-- <img src="assets/images/line-dec.png" alt="waves"> -->
+                        <div class="wavy-underline">
+                            <svg viewBox="0 0 200 40" width="140" height="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 10 Q10 2 20 10 T40 10 T60 10 T80 10 T100 10 T120 10 T140 10 T160 10 T180 10 T200 10"
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
+                                <path
+                                    d="M0 20 Q10 12 20 20 T40 20 T60 20 T80 20 T100 20 T120 20 T140 20 T160 20 T180 20 T200 20"
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
+                                <path
+                                    d="M0 30 Q10 22 20 30 T40 30 T60 30 T80 30 T100 30 T120 30 T140 30 T160 30 T180 30 T200 30"
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
+                            </svg>
+                        </div>
                         <p>Retrouve nos différents cours, adaptés à tous les âges et tous les niveaux. Rejoins
                             l'aventure et fais partie de notre grande famille !</p>
                     </div>
@@ -227,21 +409,17 @@ https://templatemo.com/tm-548-training-studio
                             </div>
                             <div class="right-content">
                                 <h4>WOD</h4>
-                                <p>Le WOD est une méthode d'entraînement complète qui combine cardio,
-                                    musculation et mouvements fonctionnels. Adapté à tous les niveaux, il permet de
-                                    gagner en force, en endurance, en mobilité et en explosivité</p>
+                                <p>Le WOD est un entraînement complet mêlant cardio, force et mouvements fonctionnels. Adapté à tous, il développe endurance, mobilité et puissance.</p>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
                         </li>
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="assets/images/features-first-icon.png" alt="second one">
+                                <img src="assets/images/domain/carbon--running.svg" alt="second one">
                             </div>
                             <div class="right-content">
                                 <h4>Prépa Hyrox</h4>
-                                <p>Tu souhaites préparer ton hyrox ? Avec nos séances spécifiques, tu travailleras
-                                    chaque mouvement clé, amélioreras ton cardio, ton renforcement musculaire et ta
-                                    technique, le tout dans une ambiance conviviale et motivante</p>
+                                <p>La prépa Hyrox est un programme intense mêlant course et mouvements fonctionnels pour booster endurance, puissance et mental de compétiteur.</p>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
                         </li>
@@ -252,10 +430,7 @@ https://templatemo.com/tm-548-training-studio
                             </div>
                             <div class="right-content">
                                 <h4>Cardio boxing</h4>
-                                <p>La cardio Boxing, c'est du cardio et de la boxe... sans coups ! Brûle des calories,
-                                    te tonifie et te défoule en toute sécurité, accessible à tous les niveaux, chaque
-                                    séance te fait bouger, progresser et t'amuser dans une ambiance conviviale et
-                                    motivante</p>
+                                <p>Le cardio boxing mélange cardio et boxe sans contact. Brûle des calories, te tonifie et te défoule avec énergie et bonne humeur.</p>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
                         </li>
@@ -269,8 +444,7 @@ https://templatemo.com/tm-548-training-studio
                             </div>
                             <div class="right-content">
                                 <h4>Circuit training</h4>
-                                <p>Le circuit training est un entraînement doux et accessible à tous pour retrouver
-                                    énergie, mobilité et tonus. Chacun progresse à son rythme</p>
+                                <p>Le circuit training est un entraînement doux et accessible à tous pour retrouver énergie, mobilité et tonus. Chacun progresse à son rythme</p>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
                         </li>
@@ -280,24 +454,17 @@ https://templatemo.com/tm-548-training-studio
                             </div>
                             <div class="right-content">
                                 <h4>Boxe</h4>
-                                <p>La Boxe, c'est le sport de combat par excellence : technique, force et endurance.
-                                    Apprends à te défendre, à te dépasser et à canaliser ton énergie, dans une ambiance
-                                    encadrée, conviviale et motivante</p>
+                                <p>La boxe est le sport de combat par excellence : technique, force et endurance. Apprends à te dépasser et à canaliser ton énergie dans une ambiance motivante.</p>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
                         </li>
                         <li class="feature-item">
                             <div class="left-icon">
-                                <img src="assets/images/domain/tabler--hours-12.svg" alt="gym training">
+                                <img src="assets/images/domain/bi--person-arms-up.svg" alt="gym training">
                             </div>
                             <div class="right-content">
-                                <h4>Accès libre</h4>
-                                <p>Envie de t’entraîner à ton rythme ? Viens profiter de la salle en libre accès et
-                                    accède aux machines ergonomiques : BikeErg, Assault Bike, rameur et SkiErg ainsi
-                                    qu’à l’étage boxing équipé d’un ring de boxe et de sacs de frappe.
-                                    Que ce soit pour transpirer, te défouler ou simplement bouger, tu fais ta séance
-                                    comme tu l’aimes, quand tu veux.
-                                </p>
+                                <h4>Circuit Renfo</h4>
+                                <p>Le circuit renfo est un entraînement complet pour renforcer tout le corps, améliorer ton tonus et gagner en confiance séance après séance.</p>
                                 <!-- <a href="#" class="text-button">Discover More</a> -->
                             </div>
                         </li>
@@ -319,18 +486,17 @@ https://templatemo.com/tm-548-training-studio
                             <svg viewBox="0 0 200 40" width="140" height="12" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0 10 Q10 2 20 10 T40 10 T60 10 T80 10 T100 10 T120 10 T140 10 T160 10 T180 10 T200 10"
-                                    fill="none" stroke="#f9735b" stroke-width="3" />
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
                                 <path
                                     d="M0 20 Q10 12 20 20 T40 20 T60 20 T80 20 T100 20 T120 20 T140 20 T160 20 T180 20 T200 20"
-                                    fill="none" stroke="#f9735b" stroke-width="3" />
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
                                 <path
                                     d="M0 30 Q10 22 20 30 T40 30 T60 30 T80 30 T100 30 T120 30 T140 30 T160 30 T180 30 T200 30"
-                                    fill="none" stroke="#f9735b" stroke-width="3" />
+                                    fill="none" stroke="#9a0060" stroke-width="3" />
                             </svg>
-
                         </div>
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
-                            ultricies fermentum massa consequat eu.</p>
+                        <!-- <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
+                            ultricies fermentum massa consequat eu.</p> -->
                     </div>
                 </div>
             </div>
@@ -338,12 +504,12 @@ https://templatemo.com/tm-548-training-studio
                 <div class="col-lg-12">
                     <div class="filters">
                         <ul class="schedule-filter">
-                            <li class="active" data-tsfilter="monday">Monday</li>
-                            <li data-tsfilter="tuesday">Tuesday</li>
-                            <li data-tsfilter="wednesday">Wednesday</li>
-                            <li data-tsfilter="thursday">Thursday</li>
-                            <li data-tsfilter="friday">Friday</li>
-                            <li data-tsfilter="saturday">Saturday</li>
+                            <li class="active" data-tsfilter="monday">Lundi</li>
+                            <li data-tsfilter="tuesday">Mardi</li>
+                            <li data-tsfilter="wednesday">Mercredi</li>
+                            <li data-tsfilter="thursday">Jeudi</li>
+                            <li data-tsfilter="friday">Vendredi</li>
+                            <li data-tsfilter="saturday">Samedi</li>
                         </ul>
                     </div>
                 </div>
@@ -360,11 +526,11 @@ https://templatemo.com/tm-548-training-studio
                                     <td class="course-cell"></td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">11H15 - 12H15</td>
+                                    <td class="day-time">10H30 - 11H30</td>
                                     <td class="course-cell"></td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">10H30 - 11H30</td>
+                                    <td class="day-time">11H15 - 12H15</td>
                                     <td class="course-cell"></td>
                                 </tr>
                                 <tr>
@@ -372,15 +538,11 @@ https://templatemo.com/tm-548-training-studio
                                     <td class="course-cell"></td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">14H - 15H</td>
-                                    <td class="course-cell"></td>
-                                </tr>
-                                <tr>
                                     <td class="day-time">15H30 - 16H30</td>
                                     <td class="course-cell"></td>
                                 </tr>
                                 <tr>
-                                    <td class="day-time">17H15 - 18H15</td>
+                                    <td class="day-time">17H20 - 18H20</td>
                                     <td class="course-cell"></td>
                                 </tr>
                                 <tr>
@@ -416,18 +578,18 @@ https://templatemo.com/tm-548-training-studio
                             <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <fieldset>
-                                        <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                                        <input name="name" type="text" id="name" placeholder="Ton Nom*" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <fieldset>
                                         <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
-                                            placeholder="Your Email*" required="">
+                                            placeholder="Ton Email*" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
                                     <fieldset>
-                                        <input name="subject" type="text" id="subject" placeholder="Subject">
+                                        <input name="subject" type="text" id="subject" placeholder="Sujet">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
@@ -438,7 +600,7 @@ https://templatemo.com/tm-548-training-studio
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                        <button type="submit" id="form-submit" class="main-button">Envoyer le message</button>
                                     </fieldset>
                                 </div>
                             </div>
@@ -457,7 +619,7 @@ https://templatemo.com/tm-548-training-studio
                 <div class="col-lg-6">
                     <p>&copy; <span id="currentYear"></span> Boxnfit Training
                         - Fait par <a rel="nofollow" href="https://github.com/idembele70" class="tm-text-link"
-                            target="_parent">idembele70</a><br>
+                            target="_parent">Ibrahim DEMBELE</a><br>
                     </p>
                 </div>
                 <div class="col-lg-6 social-wrapper">
@@ -473,6 +635,9 @@ https://templatemo.com/tm-548-training-studio
             </div>
         </div>
     </footer>
+
+    <!-- splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
