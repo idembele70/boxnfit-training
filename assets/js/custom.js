@@ -33,51 +33,44 @@
 	function fillScheduleByHour(day) {
 		const courses = [
 			// CARDIO BOXING
-			{ name: "CARDIO BOXING", day: "monday", time: "9H15 - 10H15" },
-			{ name: "CARDIO BOXING", day: "monday", time: "18H30 - 19H30" },
+			{ name: "CARDIO BOXING", day: "wednesday", time: "9H15 - 10H15" },
+			{ name: "CARDIO BOXING", day: "monday", time: "18H20 - 19H20" },
 			{ name: "CARDIO BOXING", day: "wednesday", time: "18H30 - 19H30" },
 			{ name: "CARDIO BOXING", day: "thursday", time: "12H15 - 13H" },
-			{ name: "CARDIO BOXING", day: "saturday", time: "11H15 - 12H15" },
+			{ name: "CARDIO BOXING", day: "saturday", time: "11H - 12H" },
 
-
-			// SENIOR
-			{ name: "SENIOR", day: "monday", time: "10H30 - 11H30" },
-			{ name: "SENIOR", day: "thursday", time: "10H30 - 11H30" },
 
 			// CAF
 			{ name: "CAF", day: "monday", time: "12H15 - 13H" },
 			{ name: "CAF", day: "monday", time: "17H20 - 18H20" },
+			{ name: "CAF", day: "friday", time: "11H - 12H" },
+
 
 
 			// WOD
-			{ name: "WOD", day: "monday", time: "18H30 - 19H30" },
-			{ name: "WOD", day: "monday", time: "19H45 - 20H45" },
-			{ name: "WOD", day: "tuesday", time: "9H15 - 10H15" },
-			{ name: "WOD", day: "tuesday", time: "18H30 - 19H30" },
-			{ name: "WOD", day: "tuesday", time: "19H45 - 20H45" },
-			{ name: "WOD", day: "wednesday", time: "9H15 - 10H15" },
-			{ name: "WOD", day: "wednesday", time: "19H45 - 20H45" },
-			{ name: "WOD", day: "thursday", time: "9H15 - 10H15" },
-			{ name: "WOD", day: "thursday", time: "18H30 - 19H30" },
-			{ name: "WOD", day: "thursday", time: "19H45 - 20H45" },
-			{ name: "WOD", day: "friday", time: "18H30 - 19H30" },
+			{ name: "WOD", day: "monday", time: "18H20 - 19H20" },
+			{ name: "WOD", day: "monday", time: "19H20 - 20H20" },
+			{ name: "WOD", day: "tuesday", time: "18H20 - 19H20" },
+			{ name: "WOD", day: "tuesday", time: "19H20 - 20H20" },
+			{ name: "WOD", day: "wednesday", time: "19H30 - 20H30" },
+			{ name: "WOD", day: "thursday", time: "18H20 - 19H20" },
+			{ name: "WOD", day: "thursday", time: "19H20 - 20H20" },
+			{ name: "WOD", day: "friday", time: "19H10 - 20H" },
 
 			// BOXE ANGLAISE
-			{ name: "BOXE ANGLAISE", day: "monday", time: "19H45 - 20H45" },
-			{ name: "BOXE ANGLAISE", day: "thursday", time: "19H45 - 20H45" },
+			{ name: "BOXE ANGLAISE", day: "monday", time: "19H20 - 20H20" },
+
 
 			// CIRCUIT TRAINING
-			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "10H30 - 11H30" },
+			{ name: "CIRCUIT TRAINING", day: "monday", time: "9H15 - 10H15" },
 			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "17H20 - 18H20" },
-			{ name: "CIRCUIT TRAINING", day: "wednesday", time: "10H30 - 11H30" },
+			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "11H - 12H" },
 			{ name: "CIRCUIT TRAINING", day: "thursday", time: "17H20 - 18H20" },
-			{ name: "CIRCUIT TRAINING", day: "friday", time: "10H30 - 11H30" },
 
 			// PRÉPA WOD
 			{ name: "PRÉPA WOD", day: "tuesday", time: "12H15 - 13H" },
-			{ name: "PRÉPA WOD", day: "wednesday", time: "12H15 - 13H" },
-			{ name: "PRÉPA WOD", day: "wednesday", time: "17H20 - 18H20" },
-			{ name: "PRÉPA WOD", day: "friday", time: "9H15 - 10H15" },
+			{ name: "PRÉPA WOD", day: "tuesday", time: "9H15 - 10H15" },
+			{ name: "PRÉPA WOD", day: "thursday", time: "9H15 - 10H15" },
 			{ name: "PRÉPA WOD", day: "friday", time: "12H15 - 13H" },
 
 			// KIDS
@@ -86,14 +79,19 @@
 
 			// PRÉPA HYROX
 			{ name: "PRÉPA HYROX", day: "wednesday", time: "18H30 - 19H30" },
-			{ name: "PRÉPA HYROX", day: "friday", time: "17H20 - 18H20" },
+			{ name: "PRÉPA HYROX", day: "wednesday", time: "12H15 - 13H" },
+			{ name: "PRÉPA HYROX", day: "friday", time: "9H15 - 10H15" },
+			{ name: "PRÉPA HYROX", day: "friday", time: "18H10 - 19H10" },
 
 			// CIRCUIT RENFO
-			{ name: "CIRCUIT RENFO", day: "friday", time: "17H20 - 18H20" },
+			{ name: "CIRCUIT RENFO", day: "friday", time: "17H10 - 18H10" },
+			
+			// TECHNIQUE & RENFO
+			{ name: "TECHNIQUE & RENFO", day: "friday", time: "19H10 - 20H" },
 
 			// WOD TEAM
 			{ name: "WOD TEAM", day: "saturday", time: "10H - 11H" },
-			{ name: "WOD TEAM", day: "saturday", time: "11H15 - 12H15" },
+			{ name: "WOD TEAM", day: "saturday", time: "11H - 12H" },
 
 		];
 		const todayCourse = courses.filter(c => c.day === day.toLowerCase())
@@ -216,7 +214,7 @@
 	}).mount();
 
 	document.querySelectorAll('.next-btn').forEach(btn => {
-  btn.addEventListener('click', () => splide.go('>'));
-});
+		btn.addEventListener('click', () => splide.go('>'));
+	});
 
 })(window.jQuery);
