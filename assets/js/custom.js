@@ -43,141 +43,129 @@
 	}
 
 	function fillScheduleByHour(day) {
-		const coursesSemaineA = [
-			// CARDIO BOXING
-			{ name: "CARDIO BOXING", day: "monday", time: "18H - 19H" },
-			{ name: "CARDIO BOXING", day: "wednesday", time: "18H - 19H" },
-			{ name: "CARDIO BOXING", day: "saturday", time: "10H - 12H" },
-
-			// CAF
-			{ name: "CAF", day: "monday", time: "12H15 - 13H" },
-
-			// WOD
-			{ name: "WOD", day: "monday", time: "18H - 19H" },
-			{ name: "WOD", day: "monday", time: "19H - 20H" },
-			{ name: "WOD", day: "tuesday", time: "18H - 19H" },
-			{ name: "WOD", day: "tuesday", time: "19H - 20H" },
-			{ name: "WOD", day: "wednesday", time: "19H - 20H" },
-			{ name: "WOD", day: "thursday", time: "18H - 19H" },
-			{ name: "WOD", day: "thursday", time: "19H - 20H" },
-
-			// BOXE
-			{ name: "BOXE", day: "monday", time: "19H - 20H" },
-
-			// CIRCUIT TRAINING
-			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "9H15 - 10H" },
-			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "17H15 - 18H" },
-			{ name: "CIRCUIT TRAINING", day: "thursday", time: "9H15 - 10H" },
-			{ name: "CIRCUIT TRAINING", day: "thursday", time: "17H15 - 18H" },
-			{ name: "CIRCUIT TRAINING", day: "friday", time: "12H15 - 13H" },
-			{ name: "CIRCUIT TRAINING", day: "friday", time: "17H15 - 18H" },
-
-			// HYBRID
+		// Planning BOXNFIT Training — Semaine A
+		const planningSemaineA = [
+			// Lundi
 			{ name: "HYBRID", day: "monday", time: "9H15 - 10H" },
-			{ name: "HYBRID", day: "tuesday", time: "12H15 - 13H" },
-			{ name: "HYBRID", day: "thursday", time: "12H15 - 13H" },
-
-			// BOXNCALS
-			{ name: "BOXNCALS", day: "monday", time: "17H15 - 18H" },
-			{ name: "BOXNCALS", day: "wednesday", time: "12H15 - 13H" },
-
-			// KIDS
-			{ name: "KIDS", day: "wednesday", time: "16H - 16H45" },
-			{ name: "KIDS", day: "saturday", time: "9H15 - 10H" },
-
-			// BOXNROX
-			{ name: "BOXNROX", day: "wednesday", time: "9H15 - 10H" },
-			{ name: "BOXNROX", day: "wednesday", time: "18H - 19H" },
-			{ name: "BOXNROX", day: "friday", time: "9H15 - 10H" },
-			{ name: "BOXNROX", day: "friday", time: "18H - 19H" },
-
-			// WOD TEAM
-			{ name: "WOD TEAM", day: "saturday", time: "10H - 12H" },
-			{ name: "WOD TEAM", day: "saturday", time: "12H15 - 13H" },
-
-			// OPEN GYM
-			{ name: "OPEN GYM", day: "monday", time: "10H - 12H" },
+			{ name: "OPEN GYM", day: "monday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "monday", time: "11H - 12H" },
+			{ name: "CAF", day: "monday", time: "12H15 - 13H" },
 			{ name: "OPEN GYM", day: "monday", time: "16H - 17H" },
-			{ name: "OPEN GYM", day: "tuesday", time: "10H - 12H" },
+			{ name: "CIRCUIT TRAINING", day: "monday", time: "17H15 - 18H" },
+			{ name: "CARDIO BOXING + WOD", day: "monday", time: "18H - 19H" },
+			{ name: "WOD + BOXE", day: "monday", time: "19H - 20H" },
+
+			// Mardi
+			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "tuesday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "tuesday", time: "11H - 12H" },
+			{ name: "HYBRID", day: "tuesday", time: "12H15 - 13H" },
 			{ name: "OPEN GYM", day: "tuesday", time: "16H - 17H" },
-			{ name: "OPEN GYM", day: "wednesday", time: "10H - 12H" },
-			{ name: "OPEN GYM", day: "thursday", time: "10H - 12H" },
-			{ name: "OPEN GYM", day: "thursday", time: "16H - 17H" },
-			{ name: "OPEN GYM", day: "friday", time: "10H - 12H" },
-		];
-
-		const coursesSemaineB = [
-			// CARDIO BOXING
-			{ name: "CARDIO BOXING", day: "monday", time: "18H - 19H" },
-			{ name: "CARDIO BOXING", day: "wednesday", time: "18H - 19H" },
-			{ name: "CARDIO BOXING", day: "thursday", time: "12H15 - 13H" },
-
-			// CAF
-			{ name: "CAF", day: "monday", time: "9H15 - 10H" },
-			{ name: "CAF", day: "monday", time: "17H15 - 18H" },
-
-			// WOD
-			{ name: "WOD", day: "monday", time: "18H - 19H" },
-			{ name: "WOD", day: "monday", time: "19H - 20H" },
+			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "17H15 - 18H" },
 			{ name: "WOD", day: "tuesday", time: "18H - 19H" },
 			{ name: "WOD", day: "tuesday", time: "19H - 20H" },
+
+			// Mercredi
+			{ name: "BOXNROX", day: "wednesday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "wednesday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "wednesday", time: "11H - 12H" },
+			{ name: "BOXNCALS", day: "wednesday", time: "12H15 - 13H" },
+			{ name: "KIDS", day: "wednesday", time: "16H - 16H45" },
+			{ name: "OPEN GYM", day: "wednesday", time: "17H15 - 18H" },
+			{ name: "BOXNROX + CARDIO BOXING", day: "wednesday", time: "18H - 19H" },
 			{ name: "WOD", day: "wednesday", time: "19H - 20H" },
+
+			// Jeudi
+			{ name: "CIRCUIT TRAINING", day: "thursday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "thursday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "thursday", time: "11H - 12H" },
+			{ name: "HYBRID", day: "thursday", time: "12H15 - 13H" },
+			{ name: "OPEN GYM", day: "thursday", time: "16H - 17H" },
+			{ name: "CIRCUIT TRAINING", day: "thursday", time: "17H15 - 18H" },
 			{ name: "WOD", day: "thursday", time: "18H - 19H" },
 			{ name: "WOD", day: "thursday", time: "19H - 20H" },
 
-			// BOXE
-			{ name: "BOXE", day: "monday", time: "19H - 20H" },
-
-			// CIRCUIT TRAINING
-			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "12H15 - 13H" },
-			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "17H15 - 18H" },
-			{ name: "CIRCUIT TRAINING", day: "thursday", time: "17H15 - 18H" },
-			{ name: "CIRCUIT TRAINING", day: "friday", time: "9H15 - 10H" },
+			// Vendredi
+			{ name: "BOXNROX", day: "friday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "friday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "friday", time: "11H - 12H" },
+			{ name: "CIRCUIT TRAINING", day: "friday", time: "12H15 - 13H" },
+			{ name: "OPEN GYM", day: "friday", time: "16H - 17H" },
 			{ name: "CIRCUIT TRAINING", day: "friday", time: "17H15 - 18H" },
-
-			// HYBRID
-			{ name: "HYBRID", day: "monday", time: "12H15 - 13H" },
-			{ name: "HYBRID", day: "tuesday", time: "9H15 - 10H" },
-			{ name: "HYBRID", day: "thursday", time: "9H15 - 10H" },
-
-			// BOXNCALS
-			{ name: "BOXNCALS", day: "wednesday", time: "9H15 - 10H" },
-
-			// KIDS
-			{ name: "KIDS", day: "wednesday", time: "16H - 16H45" },
-			{ name: "KIDS", day: "saturday", time: "9H15 - 10H" },
-
-			// BOXNROX
-			{ name: "BOXNROX", day: "wednesday", time: "12H15 - 13H" },
-			{ name: "BOXNROX", day: "wednesday", time: "18H - 19H" },
-			{ name: "BOXNROX", day: "friday", time: "12H15 - 13H" },
 			{ name: "BOXNROX", day: "friday", time: "18H - 19H" },
 
-			// WOD TEAM
-			{ name: "WOD TEAM", day: "saturday", time: "10H - 12H" },
-			{ name: "WOD TEAM", day: "saturday", time: "12H15 - 13H" },
-
-			// OPEN GYM
-			{ name: "OPEN GYM", day: "monday", time: "10H - 12H" },
-			{ name: "OPEN GYM", day: "monday", time: "16H - 17H" },
-			{ name: "OPEN GYM", day: "tuesday", time: "10H - 12H" },
-			{ name: "OPEN GYM", day: "tuesday", time: "16H - 17H" },
-			{ name: "OPEN GYM", day: "wednesday", time: "10H - 12H" },
-			{ name: "OPEN GYM", day: "thursday", time: "10H - 12H" },
-			{ name: "OPEN GYM", day: "thursday", time: "16H - 17H" },
-			{ name: "OPEN GYM", day: "friday", time: "10H - 12H" },
+			// Samedi
+			{ name: "KIDS", day: "saturday", time: "9H15 - 10H" },
+			{ name: "CIRCUIT TRAINING TEAM", day: "saturday", time: "10H - 11H" },
+			{ name: "WOD TEAM", day: "saturday", time: "11H - 12H" },
 		];
 
-		const todayCourse = isSemaineA()
-			? coursesSemaineA.filter(c => c.day === day.toLowerCase())
-			: coursesSemaineB.filter(c => c.day === day.toLowerCase())
+		const planningSemaineB = [
+			// Lundi
+			{ name: "CAF", day: "monday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "monday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "monday", time: "11H - 12H" },
+			{ name: "HYBRID", day: "monday", time: "12H15 - 13H" },
+			{ name: "OPEN GYM", day: "monday", time: "16H - 17H" },
+			{ name: "CAF", day: "monday", time: "17H15 - 18H" },
+			{ name: "CARDIO BOXING + WOD", day: "monday", time: "18H - 19H" },
+			{ name: "WOD + BOXE", day: "monday", time: "19H - 20H" },
+
+			// Mardi
+			{ name: "HYBRID", day: "tuesday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "tuesday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "tuesday", time: "11H - 12H" },
+			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "12H15 - 13H" },
+			{ name: "OPEN GYM", day: "tuesday", time: "16H - 17H" },
+			{ name: "CIRCUIT TRAINING", day: "tuesday", time: "17H15 - 18H" },
+			{ name: "WOD", day: "tuesday", time: "18H - 19H" },
+			{ name: "WOD", day: "tuesday", time: "19H - 20H" },
+
+			// Mercredi
+			{ name: "BOXNCALS", day: "wednesday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "wednesday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "wednesday", time: "11H - 12H" },
+			{ name: "BOXNROX", day: "wednesday", time: "12H15 - 13H" },
+			{ name: "KIDS", day: "wednesday", time: "16H - 16H45" },
+			{ name: "OPEN GYM", day: "wednesday", time: "17H15 - 18H" },
+			{ name: "BOXNROX + CARDIO BOXING", day: "wednesday", time: "18H - 19H" },
+			{ name: "WOD", day: "wednesday", time: "19H - 20H" },
+
+			// Jeudi
+			{ name: "HYBRID", day: "thursday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "thursday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "thursday", time: "11H - 12H" },
+			{ name: "CARDIO BOXING", day: "thursday", time: "12H15 - 13H" },
+			{ name: "OPEN GYM", day: "thursday", time: "16H - 17H" },
+			{ name: "CIRCUIT TRAINING", day: "thursday", time: "17H15 - 18H" },
+			{ name: "WOD", day: "thursday", time: "18H - 19H" },
+			{ name: "WOD", day: "thursday", time: "19H - 20H" },
+
+			// Vendredi
+			{ name: "CIRCUIT TRAINING", day: "friday", time: "9H15 - 10H" },
+			{ name: "OPEN GYM", day: "friday", time: "10H - 11H" },
+			{ name: "OPEN GYM", day: "friday", time: "11H - 12H" },
+			{ name: "BOXNROX", day: "friday", time: "12H15 - 13H" },
+			{ name: "OPEN GYM", day: "friday", time: "16H - 17H" },
+			{ name: "CIRCUIT TRAINING", day: "friday", time: "17H15 - 18H" },
+			{ name: "BOXNROX", day: "friday", time: "18H - 19H" },
+
+			// Samedi
+			{ name: "KIDS", day: "saturday", time: "9H15 - 10H" },
+			{ name: "CIRCUIT TRAINING TEAM", day: "saturday", time: "10H - 11H" },
+			{ name: "WOD TEAM", day: "saturday", time: "11H - 12H" },
+		];
+
+		const currentplaning = isSemaineA()
+			? planningSemaineA.filter(c => c.day === day.toLowerCase())
+			: planningSemaineB.filter(c => c.day === day.toLowerCase())
 
 			// vider les cellules
 			$('.course-cell').html('');
 		$('.schedule-table tbody tr').each(function () {
 			const rowTime = $(this).find('.day-time').text().trim();
 
-			const currentHourCourses = todayCourse.filter(c => c.time === rowTime)
+			const currentHourCourses = currentplaning.filter(c => c.time === rowTime)
 			currentHourCourses.forEach(c => {
 				$(this)
 					.find('.course-cell')
